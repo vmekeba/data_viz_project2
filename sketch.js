@@ -22,14 +22,15 @@ function draw() {
      
     for (let i = 0; i < numRows; i++) {
 
+      //fill(255);
       let name = data.getString(i,"Common Name");
       let x = 50;
       let y = 100 + i * 50;
       let h = 20
       let w = flowers[i] * 30;
       rect(x, y, w, h);
-
-      fill(255);
+  
+      fill(210);
       textSize(14);
       text(name,x, y-5);
     }

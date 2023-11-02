@@ -2,7 +2,7 @@ html, body {
   margin: 0;
   padding: 0;
 
-  background-color: lavenderblush;
+  background-color: rgb(212, 165, 181);
 }
 
 canvas {
@@ -11,11 +11,15 @@ canvas {
 }
 
 h1 {
+  font-family: 'Trebuchet MS';
   text-align: center;
   color: purple;
 }
 
 p {
+  font-family: 'Trebuchet MS';
+  font-size: larger;
+  font-style: bold;
   text-align: center;
-  color: blue;
+  color: purple;
 }
