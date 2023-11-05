@@ -12,17 +12,18 @@ function setup() {
 }
 
 function draw() {
-  background(50);
+  background(255, 230, 243);
 
   if (data) {
     let numRows = data.getRowCount();
     let bloom = data.getColumn('Blooming Days Per Year');
-    let flowers = data.getColumn('Fowers per Stem');
+    let flowers = data.getColumn('Flowers per Stem');
     
      
     for (let i = 0; i < numRows; i++) {
+      
+      //text(table.getString(i, 0) 2 * 6 + 60, 25);
 
-      //fill(255);
       let name = data.getString(i,"Common Name");
       let x = 50;
       let y = 100 + i * 50;
@@ -30,8 +31,8 @@ function draw() {
       let w = flowers[i] * 30;
       rect(x, y, w, h);
   
-      fill(210);
-      textSize(14);
+      fill(128, 0, 128);
+      textSize(16);
       text(name,x, y-5);
     }
   }
